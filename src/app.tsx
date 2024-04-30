@@ -4,6 +4,7 @@ import { Home as HomeIcon, Search, Library, Heart, BookMarked, SquarePlus as Add
 
 import SpotifyLogo from './assets/Spotify_Logo_RGB_White.png';
 import AlbumFoto from './assets/album.jpg';
+import { MainCards } from './components/mainCards.tsx/maincards';
 
 export function App() {
   return (
@@ -120,33 +121,8 @@ export function App() {
 
           <h2 className='font-semibold text-2xl mt-8'>Made For You</h2>
 
-          <div className='grid grid-cols-5 gap-5 mt-5'>
-            <a href='' className='flex flex-col gap-2 bg-black/10 p-3 rounded-md hover:bg-white/5 transition-colors'>
-              <img src={AlbumFoto} className='w-full' width={80} height={80} alt="Dirt do Alice In Chains" />
-              <strong className='font-semibold'>bleergh</strong>
-              <span className='text-sm text-zinc-400'>Alice In Chains, Leipa, Sol Sistere and more</span>
-            </a>
-            <a href='' className='flex flex-col gap-2 bg-black/10 p-3 rounded-md hover:bg-white/5 transition-colors'>
-              <img src={AlbumFoto} className='w-full' width={80} height={80} alt="Dirt do Alice In Chains" />
-              <strong className='font-semibold'>bleergh</strong>
-              <span className='text-sm text-zinc-400'>Alice In Chains, Leipa, Sol Sistere and more</span>
-            </a>
-            <a href='' className='flex flex-col gap-2 bg-black/10 p-3 rounded-md hover:bg-white/5 transition-colors'>
-              <img src={AlbumFoto} className='w-full' width={80} height={80} alt="Dirt do Alice In Chains" />
-              <strong className='font-semibold'>bleergh</strong>
-              <span className='text-sm text-zinc-400'>Alice In Chains, Leipa, Sol Sistere and more</span>
-            </a>
-            <a href='' className='flex flex-col gap-2 bg-black/10 p-3 rounded-md hover:bg-white/5 transition-colors'>
-              <img src={AlbumFoto} className='w-full' width={80} height={80} alt="Dirt do Alice In Chains" />
-              <strong className='font-semibold'>bleergh</strong>
-              <span className='text-sm text-zinc-400'>Alice In Chains, Leipa, Sol Sistere and more</span>
-            </a>
-            <a href='' className='flex flex-col gap-2 bg-black/10 p-3 rounded-md hover:bg-white/5 transition-colors'>
-              <img src={AlbumFoto} className='w-full' width={80} height={80} alt="Dirt do Alice In Chains" />
-              <strong className='font-semibold'>bleergh</strong>
-              <span className='text-sm text-zinc-400'>Alice In Chains, Leipa, Sol Sistere and more</span>
-            </a>
-          </div>
+          <MainCards/>
+            
         </main>
       </div>
 
