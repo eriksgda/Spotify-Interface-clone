@@ -1,67 +1,15 @@
-import { Home as HomeIcon, Search, Library, Heart, BookMarked, SquarePlus as AddIcon, 
-  ListMusic, ChevronLeft, ChevronRight, Play, Shuffle, SkipBack, SkipForward, Repeat2, 
+import { ChevronLeft, ChevronRight, Play, Shuffle, SkipBack, SkipForward, Repeat2, 
   Mic2, Volume2, List, MonitorSpeaker, Maximize2 } from 'lucide-react';
-
-import SpotifyLogo from './assets/Spotify_Logo_RGB_White.png';
 import AlbumFoto from './assets/album.jpg';
-import { MainCards } from './components/mainCards.tsx/maincards';
+import { Cards } from './components/mainCards.tsx/cards';
+import { Playlist } from './components/PlaylistList/playlist';
+import { AsideBar } from './components/AsideBar/aside';
 
 export function App() {
   return (
     <div className="h-screen flex flex-col">
       <div className="flex flex-1">
-        <aside className="w-64 bg-zinc-950 p-4">
-          <div className='space-y-8'>
-            <img src={SpotifyLogo} alt="" className='pl-2 h-12'/>
-            <nav className='space-y-1'>
-              <a href="" className='py-2 pl-2 flex items-center gap-4 text-sm font-semibold rounded-lg hover:bg-zinc-900 transition-colors'>
-                <HomeIcon />
-                Home
-              </a>
-              <a href="" className='py-2 pl-2 flex items-center gap-4 text-sm font-semibold rounded-lg hover:bg-zinc-900 transition-colors'>
-                <Search />
-                Search
-              </a>
-              <a href="" className='py-2 pl-2 flex items-center gap-4 text-sm font-semibold rounded-lg hover:bg-zinc-900 transition-colors'>
-                <Library />
-                Your Library
-              </a>
-            </nav>
-            <nav className='space-y-1'>
-              <a href="" className='py-2 pl-2 flex items-center gap-4 text-sm font-semibold rounded-lg hover:bg-zinc-900 transition-colors'>
-                <AddIcon />
-                Create Playlist              
-              </a>
-              <a href="" className='py-2 pl-2 flex items-center gap-4 text-sm font-semibold rounded-lg hover:bg-zinc-900 transition-colors'>
-                <Heart />
-                Liked Songs
-              </a>
-              <a href="" className='py-2 pl-2 flex items-center gap-4 text-sm font-semibold rounded-lg hover:bg-zinc-900 transition-colors'>
-                <BookMarked />
-                Your Episodes
-              </a>
-            </nav>
-            <div className='border-b border-zinc-700'></div>
-            <nav className='space-y-1'>
-              <a href="" className='py-2 pl-2 flex items-center gap-4 text-sm font-semibold rounded-lg hover:bg-zinc-900 transition-colors'>
-                <ListMusic />
-                Playlist 1
-              </a>
-              <a href="" className='py-2 pl-2 flex items-center gap-4 text-sm font-semibold rounded-lg hover:bg-zinc-900 transition-colors'>
-                <ListMusic />
-                Playlist 1
-              </a>
-              <a href="" className='py-2 pl-2 flex items-center gap-4 text-sm font-semibold rounded-lg hover:bg-zinc-900 transition-colors'>
-                <ListMusic />
-                Playlist 1
-              </a>
-              <a href="" className='py-2 pl-2 flex items-center gap-4 text-sm font-semibold rounded-lg hover:bg-zinc-900 transition-colors'>
-                <ListMusic />
-                Playlist 1
-              </a>
-            </nav>
-          </div>
-        </aside>  
+        <AsideBar />
         <main className="flex-1 p-6">
           <div className='flex items-center gap-2'>
             <button className='rounded-full bg-black/40 p-1'>
@@ -75,58 +23,30 @@ export function App() {
           <h1 className='font-semibold text-3xl mt-8'>Good Afternoon</h1>
 
           <div className='grid grid-cols-3 gap-5 mt-5'>
-            <a className='flex items-center gap-3 group bg-white/5 rounded overflow-hidden cursor-pointer hover:bg-white/15 transition-colors'>
-              <img src={AlbumFoto} width={80} height={80} alt="Dirt do Alice In Chains" />
-              <strong>Dirt - Alice In Chains</strong>
-              <button className='w-12 h-12 ml-auto flex items-center justify-center mr-3 pl-0.5 rounded-full bg-green-500 text-black invisible group-hover:visible'>
-                <Play />
-              </button> 
-            </a>
-            <a className='flex items-center gap-3 group bg-white/5 rounded overflow-hidden cursor-pointer hover:bg-white/15 transition-colors'>
-              <img src={AlbumFoto} width={80} height={80} alt="Dirt do Alice In Chains" />
-              <strong>Dirt - Alice In Chains</strong>
-              <button className='w-12 h-12 ml-auto flex items-center justify-center mr-3 pl-0.5 rounded-full bg-green-500 text-black invisible group-hover:visible'>
-                <Play />
-              </button> 
-            </a>
-            <a className='flex items-center gap-3 group bg-white/5 rounded overflow-hidden cursor-pointer hover:bg-white/15 transition-colors'>
-              <img src={AlbumFoto} width={80} height={80} alt="Dirt do Alice In Chains" />
-              <strong>Dirt - Alice In Chains</strong>
-              <button className='w-12 h-12 ml-auto flex items-center justify-center mr-3 pl-0.5 rounded-full bg-green-500 text-black invisible group-hover:visible'>
-                <Play />
-              </button> 
-            </a>
-            <a className='flex items-center gap-3 group bg-white/5 rounded overflow-hidden cursor-pointer hover:bg-white/15 transition-colors'>
-              <img src={AlbumFoto} width={80} height={80} alt="Dirt do Alice In Chains" />
-              <strong>Dirt - Alice In Chains</strong>
-              <button className='w-12 h-12 ml-auto flex items-center justify-center mr-3 pl-0.5 rounded-full bg-green-500 text-black invisible group-hover:visible'>
-                <Play />
-              </button> 
-            </a>
-            <a className='flex items-center gap-3 group bg-white/5 rounded overflow-hidden cursor-pointer hover:bg-white/15 transition-colors'>
-              <img src={AlbumFoto} width={80} height={80} alt="Dirt do Alice In Chains" />
-              <strong>Dirt - Alice In Chains</strong>
-              <button className='w-12 h-12 ml-auto flex items-center justify-center mr-3 pl-0.5 rounded-full bg-green-500 text-black invisible group-hover:visible'>
-                <Play />
-              </button> 
-            </a>
-            <a className='flex items-center gap-3 group bg-white/5 rounded overflow-hidden cursor-pointer hover:bg-white/15 transition-colors'>
-              <img src={AlbumFoto} width={80} height={80} alt="Dirt do Alice In Chains" />
-              <strong>Dirt - Alice In Chains</strong>
-              <button className='w-12 h-12 ml-auto flex items-center justify-center mr-3 pl-0.5 rounded-full bg-green-500 text-black invisible group-hover:visible'>
-                <Play />
-              </button> 
-            </a>
+            <Playlist/>
+            <Playlist/>
+            <Playlist/>
+            <Playlist/>
+            <Playlist/>
+            <Playlist/>
           </div>
 
           <h2 className='font-semibold text-2xl mt-8'>Made For You</h2>
-
-          <MainCards/>
+          <div className='grid grid-cols-5 gap-5 mt-5 mb-24'>
+            <Cards/>
+            <Cards/>
+            <Cards/>
+            <Cards/>
+            <Cards/>
+            <Cards/>
+            <Cards/>
+            <Cards/>
+          </div>
             
         </main>
       </div>
 
-      <footer className="bg-zinc-900 border-t border-zinc-700 p-5 flex items-center justify-between">
+      <footer className="fixed bottom-0 w-screen bg-zinc-900 border-t border-zinc-700 p-5 flex items-center justify-between">
         <div className='flex items-center gap-3'>
           <img src={AlbumFoto} width={48} height={48} alt="Dirt do Alice In Chains" />
           <div className='flex flex-col gap-px'>
