@@ -1,9 +1,9 @@
 import { ChevronLeft, ChevronRight, Play, Shuffle, SkipBack, SkipForward, Repeat2, 
   Mic2, Volume2, List, MonitorSpeaker, Maximize2 } from 'lucide-react';
 import AlbumFoto from './assets/album.jpg';
-import { Cards } from './components/mainCards.tsx/cards';
-import { Playlist } from './components/PlaylistList/playlist';
 import { AsideBar } from './components/AsideBar/aside';
+import { MainCard } from './components/mainCards.tsx/mainCard';
+import { MainPlaylist } from './components/PlaylistList/mainPlaylist';
 
 export function App() {
   return (
@@ -21,27 +21,10 @@ export function App() {
           </div>
 
           <h1 className='font-semibold text-3xl mt-8'>Good Afternoon</h1>
-
-          <div className='grid grid-cols-3 gap-5 mt-5'>
-            <Playlist/>
-            <Playlist/>
-            <Playlist/>
-            <Playlist/>
-            <Playlist/>
-            <Playlist/>
-          </div>
+          <MainPlaylist/>
 
           <h2 className='font-semibold text-2xl mt-8'>Made For You</h2>
-          <div className='grid grid-cols-5 gap-5 mt-5 mb-24'>
-            <Cards/>
-            <Cards/>
-            <Cards/>
-            <Cards/>
-            <Cards/>
-            <Cards/>
-            <Cards/>
-            <Cards/>
-          </div>
+          <MainCard/>
             
         </main>
       </div>
