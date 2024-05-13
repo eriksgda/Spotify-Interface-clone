@@ -2,15 +2,17 @@ import { ChevronLeft, ChevronRight, Play, Shuffle, SkipBack, SkipForward, Repeat
   Mic2, Volume2, List, MonitorSpeaker, Maximize2 } from 'lucide-react';
 import AlbumFoto from './assets/album.jpg';
 import { AsideBar } from './components/AsideBar/aside';
-import { MainCard } from './components/mainCards.tsx/mainCard';
+import { MainCard } from './components/mainCards/mainCard';
 import { MainPlaylist } from './components/PlaylistList/mainPlaylist';
 
 export function App() {
+    
   return (
     <div className="h-screen flex flex-col">
       <div className="flex flex-1">
-        <AsideBar />
-        <main className="flex-1 p-6">
+          <AsideBar />
+
+        <main className="flex-1 p-6 ml-64">
           <div className='flex items-center gap-2'>
             <button className='rounded-full bg-black/40 p-1'>
               <ChevronLeft />
@@ -19,6 +21,7 @@ export function App() {
               <ChevronRight />
             </button>
           </div>
+          
 
           <h1 className='font-semibold text-3xl mt-8'>Good Afternoon</h1>
           <MainPlaylist/>

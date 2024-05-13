@@ -6,6 +6,7 @@ export function NavPlaylist(){
       <PlaylistIcon> Playlist 1</ PlaylistIcon>
       <PlaylistIcon> Playlist 2</ PlaylistIcon>
       <PlaylistIcon> Playlist 3</ PlaylistIcon>
+      <PlaylistIcon> Playlist 4</ PlaylistIcon>
     </nav>
   )
 }
