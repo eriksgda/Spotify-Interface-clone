@@ -11,7 +11,7 @@ Este projeto é um clone da interface de usuário da web do Spotify, criado com 
 
 ## Foto usada como referência para construir a interface.
 
-<img src="./src/assets/Spotify_insp.png">
+<img src="./../src/assets/Spotify_insp.png">
 
 ## Tecnologias Usadas e Depêndecias
 
