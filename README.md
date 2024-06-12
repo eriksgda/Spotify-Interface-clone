@@ -4,6 +4,7 @@
 
 _Read this in othewr languages:_
 [_Português_](.translations/README-ptBR.md)
+
 ## About the project
 
 This project is a clone of the Spotify Web user interface, created for the purpose of practice and demonstration of frontend development skills, exclusively focuses on the visual aspects of the Spotify interface, excluding backend functionalities such as user management or music streaming.
