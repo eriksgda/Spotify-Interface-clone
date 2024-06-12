@@ -3,7 +3,7 @@
 > Status: finished ✔️
 
 _Read this in othewr languages:_
-[_Português_](.translations/README-ptBR.md)
+[_Português_](./translations/README-ptBR.md)
 
 ## About the project
 
