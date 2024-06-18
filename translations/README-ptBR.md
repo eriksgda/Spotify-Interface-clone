@@ -36,4 +36,4 @@ Este projeto é um clone da interface de usuário da web do Spotify, criado com 
 
 ## License
 
-Esse projeto está sob a licença [MIT](./LICENSE).
+Esse projeto está sob a licença [MIT](./../LICENSE).
